@@ -1,6 +1,5 @@
 function pyramid(n) {
   const midpoint = Math.floor((n * 2 - 1) / 2);
-  console.log(midpoint);
 
   for (let row = 0; row < n; row++) {
     let level = "";
