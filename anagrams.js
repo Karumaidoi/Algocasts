@@ -28,3 +28,13 @@ function anagrams(strA, strB) {
 }
 
 console.log(anagrams("eye", "eyez"));
+
+function anagrams2(strA, strB) {
+  return cleanupStr(strA) === cleanupStr(strB);
+}
+
+function cleanupStr(str) {
+  return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+}
+
+console.log(anagrams2("Hello Alex", "Alex Hell"));
